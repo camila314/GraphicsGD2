@@ -1,5 +1,4 @@
 pyobjc
 svgpathtools
 numpy
-tkinter
 requests

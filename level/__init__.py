@@ -2,8 +2,12 @@ import json, requests, base64, hashlib, random, os
 from itertools import cycle
 izip = zip
 import gzip
-from urllib.parse import urlencode
-import urllib.request as urllib2
+try:
+	from urllib.parse import urlencode
+	import urllib.request as urllib2
+except:
+	from urllib import urlencode
+	import urllib2
 def makeSeed(encoded):
 	if len(encoded)< 49:
 		seed2 = encoded

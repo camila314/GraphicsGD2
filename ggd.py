@@ -1,12 +1,22 @@
 import math
 import sys
 import numpy as np
-from svgpathtools import svg2paths, wsvg, CubicBezier, Arc, QuadraticBezier, Line
+from svgpathtools import svg2paths, wsvg, parse_path, CubicBezier, Arc, QuadraticBezier, Line
 import level
-from tkinter import filedialog, Tk
 import msgport
+from xml.dom import minidom
+
+try:
+    from tkinter import filedialog, Tk
+except ImportError:
+    from Tkinter import Tk
+    import tkFileDialog as filedialog
 
 
+try:
+    i_input = raw_input
+except:
+    i_input = input
 def mad(data, axis=None):
     return np.mean(abs(data - np.mean(data, axis)), axis)
 
@@ -37,12 +47,17 @@ def main():
     density = float(input("block density (default 1):"))
     scale/=density
     block_size = float(input("block size (default 0.3):"))
-    level_name = input("level name:")
+
+    # new data~
+    """mydoc = minidom.parse(file_path)
+    path_tag = mydoc.getElementsByTagName("path")
+    d_string = path_tag[0].attributes['d'].value"""
+    #end new data
     pths, _ = svg2paths(file_path)
     wsvg(pths, filename='.tmp.svg')
     paths, _ = svg2paths('.tmp.svg')
     pathsxy = []
-    lvl = level.Level(level_name)
+    lvl = level.Level("ggd")
     for path in paths:
         x_paths = [0.1]
         y_paths = [0.1]
@@ -60,7 +75,7 @@ def main():
             elif not isinstance(p, Line):
 
                 print(p)
-            for i in range(round(p.length())):
+            for i in range(int(round(p.length()))):
                 comp = p.point(i / p.length())
                 slopes.append(slope(x_paths[-1], y_paths[-1], comp.real, comp.imag))
                 x_paths.append(comp.real)
@@ -79,7 +94,7 @@ def main():
     msgport.uploadToGD(lvl)
     #lid = lvl.uploadLevel(uname, password, lpassword="1", description="")
     #print('Your level ID is '+str(lid))
-    input("Pasted the level. Press enter to exit")
+    i_input("Pasted the level. Press enter to exit")
 
 
 if __name__ == '__main__':
