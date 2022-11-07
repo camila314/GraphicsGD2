@@ -1,0 +1,5 @@
+svgpathtools
+requests
+numpy
+pyobjc; sys_platform == 'darwin'
+pypiwin32; sys_platform == 'nt'

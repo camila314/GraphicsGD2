@@ -1,0 +1,421 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		AF162B8424F9EB6F005241A0 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AF162B8324F9EB6F005241A0 /* Cocoa.framework */; };
+		AF162B8D24F9EB6F005241A0 /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = AF162B8B24F9EB6F005241A0 /* Credits.rtf */; };
+		AF162B9024F9EB6F005241A0 /* libpython2.7.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = AF162B8F24F9EB6F005241A0 /* libpython2.7.dylib */; };
+		AF162B9224F9EB6F005241A0 /* main.py in Resources */ = {isa = PBXBuildFile; fileRef = AF162B9124F9EB6F005241A0 /* main.py */; };
+		AF162B9424F9EB6F005241A0 /* AppDelegate.py in Resources */ = {isa = PBXBuildFile; fileRef = AF162B9324F9EB6F005241A0 /* AppDelegate.py */; };
+		AF162B9724F9EB6F005241A0 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = AF162B9524F9EB6F005241A0 /* MainMenu.xib */; };
+		AF162B9924F9EB70005241A0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AF162B9824F9EB70005241A0 /* Assets.xcassets */; };
+		AF162B9C24F9EB70005241A0 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = AF162B9B24F9EB70005241A0 /* main.m */; };
+		AF162BA324F9EC8C005241A0 /* MyView.py in Resources */ = {isa = PBXBuildFile; fileRef = AF162BA224F9EC8C005241A0 /* MyView.py */; };
+		AF162BAC24FA078F005241A0 /* ViewController.py in Resources */ = {isa = PBXBuildFile; fileRef = AF162BAB24FA078F005241A0 /* ViewController.py */; };
+		AF162BBF24FB180D005241A0 /* GGD2 in Resources */ = {isa = PBXBuildFile; fileRef = AF162BBE24FB180D005241A0 /* GGD2 */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		AF162B8024F9EB6F005241A0 /* GraphicsGDGUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GraphicsGDGUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		AF162B8324F9EB6F005241A0 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		AF162B8624F9EB6F005241A0 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		AF162B8724F9EB6F005241A0 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		AF162B8824F9EB6F005241A0 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		AF162B8C24F9EB6F005241A0 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = ../en.lproj/Credits.rtf; sourceTree = "<group>"; };
+		AF162B8F24F9EB6F005241A0 /* libpython2.7.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libpython2.7.dylib; path = /System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/config/libpython2.7.dylib; sourceTree = "<absolute>"; };
+		AF162B9124F9EB6F005241A0 /* main.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = main.py; sourceTree = "<group>"; };
+		AF162B9324F9EB6F005241A0 /* AppDelegate.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = AppDelegate.py; sourceTree = "<group>"; };
+		AF162B9624F9EB6F005241A0 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		AF162B9824F9EB70005241A0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		AF162B9A24F9EB70005241A0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AF162B9B24F9EB70005241A0 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		AF162BA224F9EC8C005241A0 /* MyView.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = MyView.py; sourceTree = "<group>"; };
+		AF162BAB24FA078F005241A0 /* ViewController.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = ViewController.py; sourceTree = "<group>"; };
+		AF162BBE24FB180D005241A0 /* GGD2 */ = {isa = PBXFileReference; lastKnownFileType = folder; path = GGD2; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		AF162B7D24F9EB6F005241A0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AF162B9024F9EB6F005241A0 /* libpython2.7.dylib in Frameworks */,
+				AF162B8424F9EB6F005241A0 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		AF162B7724F9EB6F005241A0 = {
+			isa = PBXGroup;
+			children = (
+				AF162B8924F9EB6F005241A0 /* GraphicsGDGUI */,
+				AF162B8224F9EB6F005241A0 /* Frameworks */,
+				AF162B8124F9EB6F005241A0 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		AF162B8124F9EB6F005241A0 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				AF162B8024F9EB6F005241A0 /* GraphicsGDGUI.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		AF162B8224F9EB6F005241A0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				AF162B8324F9EB6F005241A0 /* Cocoa.framework */,
+				AF162B8524F9EB6F005241A0 /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		AF162B8524F9EB6F005241A0 /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				AF162B8624F9EB6F005241A0 /* AppKit.framework */,
+				AF162B8724F9EB6F005241A0 /* CoreData.framework */,
+				AF162B8824F9EB6F005241A0 /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		AF162B8924F9EB6F005241A0 /* GraphicsGDGUI */ = {
+			isa = PBXGroup;
+			children = (
+				AF162BBE24FB180D005241A0 /* GGD2 */,
+				AF162BA824F9FECA005241A0 /* Images */,
+				AF162B9124F9EB6F005241A0 /* main.py */,
+				AF162BAB24FA078F005241A0 /* ViewController.py */,
+				AF162B9324F9EB6F005241A0 /* AppDelegate.py */,
+				AF162BA224F9EC8C005241A0 /* MyView.py */,
+				AF162B9524F9EB6F005241A0 /* MainMenu.xib */,
+				AF162B9824F9EB70005241A0 /* Assets.xcassets */,
+				AF162B9A24F9EB70005241A0 /* Info.plist */,
+				AF162B9B24F9EB70005241A0 /* main.m */,
+				AF162B8E24F9EB6F005241A0 /* SharedLibraries */,
+				AF162B8A24F9EB6F005241A0 /* Supporting Files */,
+			);
+			path = GraphicsGDGUI;
+			sourceTree = "<group>";
+		};
+		AF162B8A24F9EB6F005241A0 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				AF162B8B24F9EB6F005241A0 /* Credits.rtf */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		AF162B8E24F9EB6F005241A0 /* SharedLibraries */ = {
+			isa = PBXGroup;
+			children = (
+				AF162B8F24F9EB6F005241A0 /* libpython2.7.dylib */,
+			);
+			path = SharedLibraries;
+			sourceTree = "<group>";
+		};
+		AF162BA824F9FECA005241A0 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Images;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		AF162B7F24F9EB6F005241A0 /* GraphicsGDGUI */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AF162B9F24F9EB70005241A0 /* Build configuration list for PBXNativeTarget "GraphicsGDGUI" */;
+			buildPhases = (
+				AF162B7C24F9EB6F005241A0 /* Sources */,
+				AF162B7D24F9EB6F005241A0 /* Frameworks */,
+				AF162B7E24F9EB6F005241A0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GraphicsGDGUI;
+			productName = GraphicsGDGUI;
+			productReference = AF162B8024F9EB6F005241A0 /* GraphicsGDGUI.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		AF162B7824F9EB6F005241A0 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1130;
+				ORGANIZATIONNAME = camila314;
+				TargetAttributes = {
+					AF162B7F24F9EB6F005241A0 = {
+						CreatedOnToolsVersion = 11.3;
+					};
+				};
+			};
+			buildConfigurationList = AF162B7B24F9EB6F005241A0 /* Build configuration list for PBXProject "GraphicsGDGUI" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = AF162B7724F9EB6F005241A0;
+			productRefGroup = AF162B8124F9EB6F005241A0 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				AF162B7F24F9EB6F005241A0 /* GraphicsGDGUI */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		AF162B7E24F9EB6F005241A0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AF162BBF24FB180D005241A0 /* GGD2 in Resources */,
+				AF162B8D24F9EB6F005241A0 /* Credits.rtf in Resources */,
+				AF162B9424F9EB6F005241A0 /* AppDelegate.py in Resources */,
+				AF162B9224F9EB6F005241A0 /* main.py in Resources */,
+				AF162BA324F9EC8C005241A0 /* MyView.py in Resources */,
+				AF162B9724F9EB6F005241A0 /* MainMenu.xib in Resources */,
+				AF162B9924F9EB70005241A0 /* Assets.xcassets in Resources */,
+				AF162BAC24FA078F005241A0 /* ViewController.py in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		AF162B7C24F9EB6F005241A0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AF162B9C24F9EB70005241A0 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		AF162B8B24F9EB6F005241A0 /* Credits.rtf */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AF162B8C24F9EB6F005241A0 /* en */,
+			);
+			name = Credits.rtf;
+			sourceTree = "<group>";
+		};
+		AF162B9524F9EB6F005241A0 /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AF162B9624F9EB6F005241A0 /* en */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		AF162B9D24F9EB70005241A0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/System/Library/Frameworks/Python.framework/Versions/2.7/include/python2.7,
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SYSTEM_LIBRARY_DIR)/Frameworks/Python.framework/Versions/2.7/lib/python2.7/config",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		AF162B9E24F9EB70005241A0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/System/Library/Frameworks/Python.framework/Versions/2.7/include/python2.7,
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SYSTEM_LIBRARY_DIR)/Frameworks/Python.framework/Versions/2.7/lib/python2.7/config",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		AF162BA024F9EB70005241A0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = GraphicsGDGUI/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = gd.camila314.GraphicsGDGUI;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+			};
+			name = Debug;
+		};
+		AF162BA124F9EB70005241A0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = GraphicsGDGUI/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = gd.camila314.GraphicsGDGUI;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		AF162B7B24F9EB6F005241A0 /* Build configuration list for PBXProject "GraphicsGDGUI" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AF162B9D24F9EB70005241A0 /* Debug */,
+				AF162B9E24F9EB70005241A0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AF162B9F24F9EB70005241A0 /* Build configuration list for PBXNativeTarget "GraphicsGDGUI" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AF162BA024F9EB70005241A0 /* Debug */,
+				AF162BA124F9EB70005241A0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = AF162B7824F9EB6F005241A0 /* Project object */;
+}
